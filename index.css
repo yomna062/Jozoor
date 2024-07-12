@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Open Sauce One', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+   
+}
+body {
+    background-color: #f3f3f3;
+}
+::-webkit-scrollbar {
+    height:.5rem ;
+    width: 1.5rem;
+
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2d6a4f;
+}
+*::selection {
+    background-color: #DAC0A3;
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+    z-index: 1000;
+}
+.header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 2rem;  
+    height: 9.5rem; 
+
+}
+.header .flex .logo img{
+    height: 10rem;
+    width: 21rem;
+}
+
+.header .flex .navbar a {
+    margin-left: 3rem;
+    font-size: 2rem;
+    color: #2d6a4f;
+    border: none;
+
+}
+.header .flex  .navbar .login  {
+    color: #DAC0A3;
+    font-size: 2.5rem;
+    padding-left: 5rem;
+
+}
+.home-bg {
+    background: url(./assets/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    
+    display: flex;
+    align-items: center;
+
+}
+
+.header .flex .navbar a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.about .image {
+    flex: 1 1 40rem;
+}
+
+.about .image img{
+    width: 100%;
+    height: 40rem;
+}
+.about .content {
+    flex: 1 1 40rem;
+   
+}
+
+.about .content h3 {
+    font-size: 5rem;
+    color: #2d6a4f;
+    padding-bottom: 1rem;
+    font-family: 'Open Sauce One', sans-serif;
+}
+.about .content p {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color:rgba(0, 0, 0, 0.549);
+}
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #EADBC8;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #2d6a4f;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+.btn:hover {
+    background-color: #DAC0A3;
+    transform: scale(1.1);
+}
+
+.home-bg .home {
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+}
+.home-bg .home .content {
+    width: 50rem;
+    text-align: center;
+}
+.home-bg .home h3 {
+    font-size: 6rem;
+    font-family:"Merenda One",cursive;
+    color: #2d6a4f;
+    
+}
+.home-bg .home p {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+/*8888888888888888888888888888888888888*/
+.title{
+    display:flex;
+    justify-content: center;
+    color: #2d6a4f;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   flex-wrap: wrap;
+
+}*/
+.card{
+    background-color: white;
+    width:15.25em;
+    box-shadow:0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #2d6a4f;
+    font-size: 1.3em;
+    font-weight: 600; 
+    margin: 10px;
+}
+video{
+    margin-top: 80px;
+    display: flex;
+    width: 90%;
+    padding-left: 90px;
+    justify-content: center;
+   
+}
+
+.cont2{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+.cont2 h2{
+    color:#2d6a4f ;
+    font-size:2rem;
+    font-weight: 500;
+     margin-top: 90px;
+     margin-bottom: 20px;
+
+}
+.cont2 hr{
+    width: 60px;
+    height: 3px;
+    background-color:white;
+}
+.cont2 h3{
+color:#2d6a4f;    
+font-weight: 600;
+font-size: 1.2rem;
+margin-top: 20px;
+margin-bottom: 40px;
+}
+.cont2 pre{
+    font-size:1.3em;
+  font-weight: 400;
+    color:#00296b ;
+
+}
+.projects{
+    background-color: #2d6a4f;
+}
+.projects content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: white;
+    border: 2px solid white;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px;
+    transition: 0.7s ease;
+
+}
+.project-card :hover{
+    transform: scale(1.1);
+}
+.project-card :hover .project-img{
+    opacity: 0.8;
+
+}
+.project-img img {
+width: 100%;
+}
+.project-category{
+    font-size: 0.8em;
+    color: #2d6a4f;
+    background-color: #2d6a4f;
+    width: 6.5em;
+    height: 3em;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-det{
+    text-decoration: none;
+    color: #2d6a4f;
+    
+
+}
+.more-det:hover{
+    color: #2d6a4f;
+}
+.project-title span {
+    color: #2d6a4f;
+    font-size: 1.3em;
+}
+
+.cont3{
+    background-color: #2d6a4f;
+    color: white;
+    width: 100%;
+    height: 16.2em;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.sec1{
+    margin: 20px;
+}
+.cont3 hr{
+    width: 60px;
+    height: 3px;
+    background-color:#2d6a4f;
+    opacity: 0.3;
+    margin: 20px;
+
+}
+.num{
+    display: flex;
+    margin: 20px;
+    font-size: 1.8em;
+}.pragraph{
+    font-size: 1.2em;
+}
+.cont4 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 20px;
+}
+.cont4-title{
+    font-size:2em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    color:#2d6a4f;
+    font-family:"Merenda One",cursive;
+}
+.cont4-hr{
+    width: 3em;
+    height: 1.3em;
+    background-color: #2d6a4f;
+}
+.cont4 .image {
+    flex: 1 1 42rem;
+}
+
+.cont4 .image img{
+    width: 80%;
+}
+.cont4 .content {
+    flex: 1 1 40rem;
+}
+.cont4 .content h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color:  #2d6a4f;
+}
+.cont4 .content .Child-cont {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+}
+.Child-cont2{
+    margin-top: 3em;
+}
+.Child-cont2 b{
+    color:  #2d6a4f;
+}
+
+.cont5{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+/*..............................................*/
+.tab-areas{
+    display: flex;
+    margin-top: 10em;
+}
+.img{
+    display: flex;
+    margin: 20px;
+}
+.tab-areas {
+    overflow: hidden;
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.tab-areas button {
+    background-color: inherit;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: 700;
+    
+}
+.tab-areas button:hover {
+    background-color: #ddd;
+}
+.tab-areas button.active {
+    background-color: #2d6a4f;
+    color: #fff;
+}
+.flex {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   justify-content: center;
+   
+}
+
+/*..............................................*/
+.footer{
+	background-color: #2d6a4f;
+    padding: 50px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+
+}
+.footer-col img{
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+    width: 30rem;
+    height: 25rem;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: white;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col hr{
+    width: 2.5em;
+    height: 0.2em;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.footer-col ul li{
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	color: white;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: black;
+	padding-left: 8px;
+}
+.footer-col p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 600;
+    font-family:"Merenda One",cursive;
+    color:white;
+}
+.social-icons a {
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+    }
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/*.....................................................................................................*/
+.testimonials{
+    padding: 40px 0;
+    background: #fff;
+    text-align: center;
+}
+.testimonials h1{
+    color: #2d6a4f;
+    font-size: 40px;
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow:hidden ;
+    padding: 0 20px;
+
+}
+.border{
+    width:160px;
+    height:5px ;
+    background: white;
+    margin: 26px auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonial{
+    background: #fff;
+    padding: 30px;
+
+}
+.testimonial i{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+
+}
+.stars{
+    color: #2d6a4f;
+    margin-bottom: 20px;
+    display: flex;
+   
+}
+.fa-solid fa-user{
+    font-size: 3.4em;
+}
+#u{
+    font-size: 40px;
+}
+/*///////////////////////////////////////////////*/
+
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+
+    }
+  /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+
+  /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+    cursor: pointer;
+    }
+    
+  /* Next & previous buttons */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+
+    }
+    
+  /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+  /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    }
+  /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+  /* Container for image text */
+    .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+  /* Six columns side by side */
+    .column {
+    float: left;
+    width: 16.66%;
+    }
+  /* Add a transparency effect for thumnbail images */
+    .demo {
+    opacity: 0.6;
+    }
+    .column .demo cursor img{
+        height: 30rem;
+        width: 15rem;
+    }
+    .active,
+    .demo:hover {
+    opacity: 1;
+    }
